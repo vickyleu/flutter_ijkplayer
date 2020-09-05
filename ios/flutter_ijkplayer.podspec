@@ -15,14 +15,15 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*' , 'IJKMediaFramework.framework'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.static_framework = true
+  s.static_framework = false
   s.ios.deployment_target = '8.0'
 
   # s.ios.vendored_frameworks = 'IJKMediaFramework.framework'
   # s.frameworks  = "AudioToolbox", "AVFoundation", "CoreGraphics", "CoreMedia", "CoreVideo", "MobileCoreServices", "OpenGLES", "QuartzCore", "VideoToolbox", "Foundation", "UIKit", "MediaPlayer"
   # s.libraries   = "bz2", "z", "stdc++"
-  s.dependency 'FlutterIJK', '~> 0.1.0'
+  s.dependency 'FlutterIJK', '= 0.2.3'
 
+  s.libraries = "bz2", "z", "stdc++"
   # s.script_phase = {:name => 'extract framework', :script=> 'echo "Hello World"; pwd' ,:execution_position => :before_compile}
 
 end
