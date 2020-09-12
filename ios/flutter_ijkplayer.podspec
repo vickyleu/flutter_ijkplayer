@@ -19,7 +19,7 @@ A new flutter plugin project.
 
 
   s.libraries = "bz2", "z", "stdc++"
-  s.frameworks  = "AudioToolbox", "AVFoundation", "CoreGraphics", "CoreMedia", "CoreVideo", "MobileCoreServices", "OpenGLES", "QuartzCore", "VideoToolbox", "Foundation", "UIKit", "MediaPlayer"
+  s.frameworks  = "AudioToolbox", "AVFoundation", "CoreGraphics", "CoreMedia", "CoreVideo", "CoreServices", "Metal", "QuartzCore", "VideoToolbox", "Foundation", "UIKit", "MediaPlayer"
 
   s.dependency 'FlutterIJK', '= 0.2.3'
   s.ios.vendored_frameworks = 'IJKMediaFramework.framework'
