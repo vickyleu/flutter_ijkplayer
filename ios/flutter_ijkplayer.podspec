@@ -24,7 +24,7 @@ A new flutter plugin project.
   s.dependency 'FlutterIJK', '= 0.2.3'
   s.ios.vendored_frameworks = 'IJKMediaFramework.framework'
 
-  valid_archs = ['arm64','arm64e','armv7s',]
+  //## valid_archs = ['arm64','arm64e','armv7s'] //,'x86_64'
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
   }
