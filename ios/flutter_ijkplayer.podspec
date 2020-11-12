@@ -12,7 +12,10 @@ A new flutter plugin project.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Caijinglong' => 'cjl_spy@163.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*' ##//, 'IJKMediaFramework.framework'
+  s.source_files = 'Classes/**/*'
+  #
+  # IJKMediaFramework_framework
+  #
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.static_framework = false
