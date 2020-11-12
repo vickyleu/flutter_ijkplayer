@@ -28,9 +28,9 @@ A new flutter plugin project.
   //s.xcconfig = {
   //  'VALID_ARCHS' =>  valid_archs.join(' '),
   //}
-  s.pod_target_xcconfig = {
-      'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)'
-  }
+  //s.pod_target_xcconfig = {
+   //   'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)'
+  //}
 
   s.ios.deployment_target = '8.0'
 
