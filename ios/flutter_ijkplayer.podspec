@@ -20,6 +20,9 @@ A new flutter plugin project.
   s.dependency 'Flutter'
   s.static_framework = false
 
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7' }
+
 
   s.libraries = "bz2", "z", "stdc++"
   s.frameworks  = "AudioToolbox", "AVFoundation", "CoreGraphics", "CoreMedia", "CoreVideo", "CoreServices", "Metal", "QuartzCore", "VideoToolbox", "Foundation", "UIKit", "MediaPlayer"
