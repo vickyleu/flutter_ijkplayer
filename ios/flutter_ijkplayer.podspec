@@ -22,10 +22,10 @@ A new flutter plugin project.
 
   valid_archs = ['arm64','arm64e','armv7s','x86_64','i386']
   s.xcconfig = {
-    'VALID_ARCHS' =>  valid_archs.join(' '),
+    'VALID_ARCHS' =>  valid_archs.join(' ')
   }
   s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7',
     'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)'
    }
   s.user_target_xcconfig = {
