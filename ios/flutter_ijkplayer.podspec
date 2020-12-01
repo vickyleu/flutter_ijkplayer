@@ -20,7 +20,7 @@ A new flutter plugin project.
   s.dependency 'Flutter'
   s.static_framework = false
 
-  valid_archs = ['arm64','arm64e','armv7s','x86_64','i386']
+  valid_archs = ['arm64','arm64e','armv7s','i386']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' ')
   }
