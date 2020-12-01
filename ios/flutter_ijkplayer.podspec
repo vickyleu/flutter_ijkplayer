@@ -28,7 +28,7 @@ A new flutter plugin project.
     'DEFINES_MODULE' => 'YES',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7',
      # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
-    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
    }
   s.user_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7'
