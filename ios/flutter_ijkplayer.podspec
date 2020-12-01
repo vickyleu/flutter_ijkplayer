@@ -20,13 +20,15 @@ A new flutter plugin project.
   s.dependency 'Flutter'
   s.static_framework = false
 
-  valid_archs = ['arm64','arm64e','armv7s','i386']
+  valid_archs = ['arm64','arm64e','armv7s','x86_64']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' ')
   }
   s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7',
-    'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)'
+     # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
+    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
    }
   s.user_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7'
